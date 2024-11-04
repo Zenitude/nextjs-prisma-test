@@ -1,3 +1,5 @@
+# Next.js : Testing CRUD with Prisma
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -19,6 +21,29 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Prisma
+
+```bash
+# 1
+npx prisma migrate dev –name init
+```
+
+To migrate the models to the database
+
+```bash
+# 2
+npx prisma generate
+```
+
+To generate Prisma client
+
+```bash
+# 3
+npx prisma studio
+```
+
+Open [http://localhost:5555](http://localhost:5555) with your browser to see Prisma studio and the database.
 
 ## Learn More
 
